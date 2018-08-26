@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    /*
+        1.cookie的特性
+            cookie 设置的cookie过期时间之前一直有效,即使窗口或者浏览器关闭
+        2.src 和 herf 的区别
+        src 是指向外部资源的位置,指向的内容将会嵌入到文档中当前标签所在位置:在请求src资源时候将指向的资源下载并应用到文档内,例如js脚本,img图片
+      
+
+    */
+    function combo(msg) {
+        var arr = msg.split("-");
+        for (var i = 1; i < arr.length; i++) {
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].substr(1, arr[i].length - 1);
+        }
+        msg = arr.join("");
+        return msg;
+    }
+   ;
+    console.log(combo('get-element-by-id'));
+
+</script>
